@@ -110,7 +110,7 @@ export default function Home() {
     </main>
     <footer className="footer pb-9 px-6 relative mb-0">
         <ResultCard isCorrect={isCorrect} correctAnswer={questions[currentQuestion].answers.find(answer => answer.isCorrect === true)?.answerText}/>
-        <Button onClick={handleNext}>{!started ? 'Start': 'Next'}</Button>
+        <Button variant="neoOutline" size="lg" onClick={handleNext}>{!started ? 'Start': 'Next'}</Button>
     </footer>
     </div>
   )
