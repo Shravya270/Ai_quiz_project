@@ -29,7 +29,7 @@ export default async function saveQuizz(quizzData:SaveQuizzDAta){
             const [{questionId}] = await tx
             .insert(dbQuestions)
             .values({
-                questionText: question.questionText,quizzid
+                questionText: question.questionText,quizzId
             })
             .returning({questionsId:dbQuestions.id});
 
