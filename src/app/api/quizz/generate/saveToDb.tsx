@@ -31,7 +31,7 @@ export default async function saveQuizz(quizzData:SaveQuizzDAta){
             .values({
                 questionText: question.questionText,quizzId
             })
-            .returning({questionsId:dbQuestions.id});
+            .returning({questionId:dbQuestions.id});
 
             if(question.answers && question.answers.length>0){
                 await tx.insert(questionAnswers).values(

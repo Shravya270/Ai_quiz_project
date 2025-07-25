@@ -21,6 +21,7 @@ const page = async ({ params }: {
     }
   })
 
+
   if (!quizzId || !quizz || quizz.questions.length === 0) {
     return <div>Quizz not found</div>
   };
