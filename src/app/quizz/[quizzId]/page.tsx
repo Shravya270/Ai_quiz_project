@@ -2,7 +2,7 @@ import { db } from "@/db";
 
 import { quizzes } from "@/db/schema";
 import { eq } from 'drizzle-orm';
-import QuizzQuestions from "../QuizzQuestions";
+import QuizzQuestions from "@/app/quizz/QuizzQuestions";
 
 const page = async ({ params }: {
   params: {
@@ -20,6 +20,7 @@ const page = async ({ params }: {
       }
     }
   })
+  console.log(quizz);
 
 
   if (!quizzId || !quizz || quizz.questions.length === 0) {

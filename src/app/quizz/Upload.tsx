@@ -29,7 +29,7 @@ const UploadDoc = () => {
         const data = await res.json();
         const quizzId = data.quizzId;
 
-        router.push(`/quizz/${quizzId}`);
+  router.push(`/quizz/${quizzId}`);
       }
     } catch (e) {
       console.log("error while generating", e);

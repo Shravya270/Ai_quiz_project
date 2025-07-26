@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import ProgressBar from "@/components/progressBar";
 import { ChevronLeft, X } from "lucide-react";
 import ResultCard from "./ResultCard";
-import QuizzSubmission from "./QuizzSubmission";
+import QuizSubmission from "./QuizzSubmission";
 import { InferSelectModel } from "drizzle-orm";
 import { questionAnswers, questions as DbQuestions, quizzes } from "@/db/schema";
 import { saveSubmission } from "@/actions/saveSubmissions";
